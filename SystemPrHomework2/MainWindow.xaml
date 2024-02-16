@@ -1,0 +1,113 @@
+﻿<Window x:Class="SystemPrHomework2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemPrHomework2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel  Orientation="Horizontal">
+
+            <Label VerticalAlignment="Center" 
+                   Content="Gelen "
+                   Margin="10 0 0 0"
+                   />
+
+            <TextBox
+                Name="GelenTextBox"
+                Width="430"
+                Height="30"
+                IsEnabled="False"
+                />
+
+            <Button
+                Name="GelenFileButton"
+                Width="80"
+                Height="30"
+                Margin="10 0 0 0"
+                Content="File" Click="GelenFileButton_Click"
+                />
+
+        </StackPanel>
+
+
+        <StackPanel  Grid.Row="1" Orientation="Horizontal">
+
+            <Label VerticalAlignment="Center" 
+            Content="Geden"
+            Margin="10 0 0 0"
+            />
+
+            <TextBox
+         Name="GeDenTextBox"
+         Width="430"
+         Height="30"
+         IsEnabled="False"
+
+         />
+
+            <Button
+         Name="GeDenFileButton"
+         Width="80"
+         Height="30"
+         Margin="10 0 0 0"
+         Content="File" Click="GeDenFileButton_Click" 
+         />
+
+        </StackPanel>
+
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+
+            <ProgressBar 
+                Name="PR_Bar"
+                Width="200"
+                Height="30"
+                Margin="20 0 0 0"
+                />
+
+            <Button
+            Name="SuspendButton"
+            Width="80"
+            Height="30"
+            Margin="10 0 0 0"
+            Content="Suspend" Click="SuspendButton_Click"
+            />
+
+            <Button
+            Name="ResumeButton"
+            Width="80"
+            Height="30"
+            Margin="10 0 0 0"
+            Content="Resume" Click="ResumeButton_Click"
+            />
+
+            <Button
+            Name="AbortButton"
+            Width="80"
+            Height="30"
+            Margin="10 0 0 0"
+            Content="Abort" Click="AbortButton_Click"
+            />
+
+            <Button
+            Name="CopyButton"
+            Width="80"
+            Height="30"
+            Margin="10 0 0 0"
+            Content="Copy" Click="CopyButton_Click"
+            />
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
